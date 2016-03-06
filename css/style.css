@@ -62,6 +62,7 @@ h5 {
 }
 
 
+
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -94,9 +95,12 @@ a {
 
 .welcome-message {
   font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
+  font-size: 26px;
+  color: #f5ae23;
   line-height: 28px;
+  color: #000080;
+
+
 }
 
 #skills-h3 {
@@ -153,15 +157,20 @@ ul {
   float: left;
   padding: 10px;
   width: 200px;
+  height: 175px;
   display: none;
+  border-radius: 25px;
 }
 
 img {
   padding: 10px;
+  width: 300px;
+  height: 200px;
 }
 
 span {
   padding: 5px;
+
 }
 
 #lets-connect {
@@ -191,6 +200,7 @@ span {
   }
   .welcome-message {
     display: none;
+
   }
 }
 
