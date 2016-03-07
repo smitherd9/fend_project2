@@ -3,20 +3,20 @@ This is empty on purpose! Your code to build the resume will go here.
  */
 
  var bio = {
-		"name": "Daniel Smither",
-		"role": "Web Developer",
-		"welcomeMessage": "A New Definition of Quality",
-		"bioPic" : "images/image2.jpg",
-		"contacts": [{
-			"mobileNum": "804 746 1464",
-			"email": "smitherd9@gmail.com",
-			"github": "smitherd9",
-			"twitter": "@DanielSmither2",
-			"location": "Richmond, Virginia, New York, New York"
+		'name': 'Daniel Smither',
+		'role': 'Web Developer',
+		'welcomeMessage': 'A New Definition of Quality',
+		'bioPic' : 'images/image2.jpg',
+		'contacts': [{
+			'mobileNum': '804 746 1464',
+			'email': 'smitherd9@gmail.com',
+			'github': 'smitherd9',
+			'twitter': '@DanielSmither2',
+			'location': 'Richmond, Virginia, New York, New York'
 
 		}],
 
-		"skills": ["HTML wizard", "CSS guru", "Javascript Pro", "Your Personal Silver Lining"]
+		'skills': ['HTML wizard', 'CSS guru', 'Javascript Pro', 'Your Personal Silver Lining']
 
 		}
 
@@ -70,18 +70,18 @@ for (contact in bio.contacts) {
 
 
 var work = {
-	"jobs": [{
-			"title": "Online English Teacher",
-			"location": "New York City",
-			"employer": "EOStudy.com",
-			"dates": "2014 to Present",
-			"description": "Teaching English to Arabic-speaking students using the WizIQ online classroom"
+	'jobs': [{
+			'title': 'Online English Teacher',
+			'location': 'New York City',
+			'employer': 'EOStudy.com',
+			'dates': '2014 to Present',
+			'description': 'Teaching English to Arabic-speaking students using the WizIQ online classroom'
 		}, {
-			"title": "Taxi Driver",
-			"location": "Richmond, Virginia",
-			"employer": "Napoleon Taxi",
-			"dates": "March 2011 to August 2012",
-			"description": "Picking up customers at various locations and taking them where they want to go"
+			'title': 'Taxi Driver',
+			'location': 'Richmond, Virginia',
+			'employer': 'Napoleon Taxi',
+			'dates': 'March 2011 to August 2012',
+			'description': 'Picking up customers at various locations and taking them where they want to go'
 		}
 
 	]
@@ -108,20 +108,20 @@ work.display = function(){
 
 
 var education = {
-	"schools": [{
-		"name": "Virginia Commonwealth University",
-		"location": "Richmond, Virginia",
-		"degree": "B.A.",
-		"majors": ["Music, Religious Studies"],
-		"dates": "2006 - 2011",
-		"url": "http://www.vcu.edu"
+	'schools': [{
+		'name': 'Virginia Commonwealth University',
+		'location': 'Richmond, Virginia',
+		'degree': 'B.A.',
+		'majors': ['Music, Religious Studies'],
+		'dates': '2006 - 2011',
+		'url': 'http://www.vcu.edu'
 		}
 	],
-	"onlineCourses": [{
-			"title": "Front End Web Developer Nanodegree",
-			"school": ": Udacity",
-			"dates": "Jan 2016 to Present",
-			"url": "http://www.udacity.com"
+	'onlineCourses': [{
+			'title': 'Front End Web Developer Nanodegree',
+			'school': ': Udacity',
+			'dates': 'Jan 2016 to Present',
+			'url': 'http://www.udacity.com'
 		}
 	]
 }
@@ -163,18 +163,18 @@ education.display = function(){
 
 
 var projects = {
-	"project": [{
-			"title": "Beyond the Doors of Perception",
-			"dates": "Jan 2016",
-			"description": "We can pool information about experiences, but never the experiences themselves.",
-			"images": ["images/image4.jpg","images/image5.jpg","images/image6.jpg"]
+	'project': [{
+			'title': 'Beyond the Doors of Perception',
+			'dates': 'Jan 2016',
+			'description': 'We can pool information about experiences, but never the experiences themselves.',
+			'images': ['images/image4.jpg','images/image5.jpg','images/image6.jpg']
 		},
 
 		{
-			"title": "Disquiet",
-			"dates": "Feb 2016",
-			"description": "I'd woken up early, and I took a long time getting ready to exist.",
-			"images": ["images/image4.jpg","images/image5.jpg","images/image6.jpg"]
+			'title': 'Disquiet',
+			'dates': 'Feb 2016',
+			'description': "I'd woken up early, and I took a long time getting ready to exist.",
+			'images': ['images/image4.jpg','images/image5.jpg','images/image6.jpg']
 		}]
 }
 
