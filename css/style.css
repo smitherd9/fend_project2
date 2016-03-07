@@ -95,10 +95,10 @@ a {
 
 .welcome-message {
   font-style: italic;
-  font-size: 26px;
+  font-size: 18px;
   color: #f5ae23;
-  line-height: 28px;
-  color: #000080;
+  line-height: 42px;
+  float: right;
 
 
 }
@@ -109,7 +109,7 @@ a {
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #336699;
 }
 
 .orange-text {
@@ -175,6 +175,12 @@ span {
 
 #lets-connect {
   text-align: center;
+
+}
+
+
+#projects {
+  background-color: #336699;
 }
 
 /* Media queries to handle various device widths */

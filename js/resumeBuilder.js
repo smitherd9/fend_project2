@@ -11,13 +11,16 @@ This is empty on purpose! Your code to build the resume will go here.
 			"mobileNum": "804 746 1464",
 			"email": "smitherd9@gmail.com",
 			"github": "smitherd9",
-			"twitter": "@DanielSmither2"
+			"twitter": "@DanielSmither2",
+			"location": "Richmond, Virginia, New York, New York"
+
 		}],
 
 		"skills": ["HTML wizard", "CSS guru", "Javascript Pro", "Your Personal Silver Lining"]
 
 		}
 
+// Bio Display Section
 
 bio.display = function(){
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -27,7 +30,7 @@ bio.display = function(){
 
 	$("#header").prepend(formattedRole);
  	$("#header").prepend(formattedName);
- 	$("#header").append(formattedMessage);
+ 	$("#name").append(formattedMessage);
  	$("#header").prepend(formattedImage);
 
 	}
@@ -85,7 +88,7 @@ var work = {
 
 }
 
-
+// Work Display Section
 
 work.display = function(){
 	for (job in work.jobs) {
@@ -109,14 +112,14 @@ var education = {
 		"name": "Virginia Commonwealth University",
 		"location": "Richmond, Virginia",
 		"degree": "B.A.",
-		"majors": ["Music", " Religious Studies"],
+		"majors": ["Music, Religious Studies"],
 		"dates": "2006 - 2011",
 		"url": "http://www.vcu.edu"
 		}
 	],
 	"onlineCourses": [{
 			"title": "Front End Web Developer Nanodegree",
-			"school": "Udacity",
+			"school": ": Udacity",
 			"dates": "Jan 2016 to Present",
 			"url": "http://www.udacity.com"
 		}
@@ -124,6 +127,7 @@ var education = {
 }
 
 
+// Education Display Section
 
 education.display = function(){
 	for (school in education.schools) {
@@ -135,18 +139,20 @@ education.display = function(){
 	var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
 
 	$(".education-entry:last").append(
-		formattedName + formattedDegree,formattedLocation,formattedMajors,formattedDates);
+		formattedName + formattedDegree, formattedLocation, formattedDates, formattedMajors);
 		}
 
 
-	for (course in education.onlineCourses) {
-	$("#education").append(HTMLonlineClasses);
+	for (course in education.onlineCourses)
+	$("#education").append(HTMLonlineClasses); {
+
+	$("#education").append(HTMLschoolStart);
 	var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
 	var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
 	var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
 	var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
 	$(".education-entry:last").append(
-		formattedTitle,formattedSchool,formattedDates,formattedURL);
+		formattedTitle + formattedSchool, formattedDates, formattedURL);
 		}
 
 	}
@@ -173,6 +179,8 @@ var projects = {
 }
 
 
+// Projects Display Section
+
 projects.display = function(){
 	for (item in projects.project) {
 	$("#projects").append(HTMLprojectStart);
@@ -191,6 +199,8 @@ projects.display = function(){
 	}
 
 
+// Click Logging
+
 $(document).click(function(loc) {
   var x = loc.pageX;
   var y = loc.pageY;
@@ -208,6 +218,7 @@ function inName(name) {
 
 	return name[0] +" "+name[1];
 }
+
 
 $("#main").append(internationalizeButton);
 $("#mapDiv").append(googleMap);
