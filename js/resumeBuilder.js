@@ -140,7 +140,7 @@ display : function() {
    }
 
 
-    for (var course in education.onlineCourses)
+    for (var course in education.onlineCourses) {
       if (education.onlineCourses.hasOwnProperty(course)) {
         $('#education').append(HTMLonlineClasses); {
 
@@ -151,6 +151,7 @@ display : function() {
         var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
         $('.education-entry:last').append(
             formattedTitle + formattedSchool, formattedDateOnline, formattedURL);
+      }
     }
 
   }
